@@ -1,0 +1,5 @@
+ID,name,advancePct,adjustPct,sort
+adv30,"30% advance, balance before dispatch",30,0,1
+adv100,100% advance (2% discount),100,-2,2
+lc60,Letter of credit 60 days,0,1.5,3
+credit30,30 days credit (approved accounts),0,2,4

@@ -1,0 +1,9 @@
+ID,name,state,freightPerKg,minFreight,transitDays,sort
+exworks,Ex-works Hyderabad (you collect),Telangana,0,0,0,1
+telangana,Telangana,Telangana,3.5,6000,1,2
+ap,Andhra Pradesh,Andhra Pradesh,4.5,8000,2,3
+karnataka,Karnataka,Karnataka,5.5,10000,3,4
+tamilnadu,Tamil Nadu,Tamil Nadu,6,12000,3,5
+maharashtra,Maharashtra,Maharashtra,6,12000,3,6
+gujarat,Gujarat,Gujarat,8,15000,5,7
+delhi,Delhi NCR,Delhi,9.5,18000,6,8

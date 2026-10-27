@@ -1,0 +1,19 @@
+ID,label,value,hint,sort
+marginPct,Margin on cost (%),18,Added to every cost line except freight,1
+gstPct,GST (%),18,Split into CGST + SGST inside the factory state,2
+factoryState,Factory state,Telangana,Decides CGST + SGST versus IGST,3
+validityDays,Quote validity (days),7,Steel prices move fast; keep this short,4
+wastagePct,Material wastage (%),8,Added to the blank weight when buying plate,5
+plateThicknesses,Stock plate thicknesses (mm),3|4|5|6|8|10|12|14|16|18|20|22|25|28|30|32|36|40|45|50,Pipe separated,6
+sfOptions,Straight flange options (mm),25|38|50|75|100,Pipe separated,7
+minDt,Minimum D/t ratio,12,Below this the plate is too thick to form,8
+maxDt,Maximum D/t ratio,600,Above this the head wrinkles,9
+csElongationLimit,Carbon steel fibre elongation limit (%),5,Above this heat treatment is added (ASME UCS-79),10
+ssElongationLimit,Stainless fibre elongation advisory (%),15,Above this solution annealing is recommended,11
+coneKnuckleAbove,Cone knuckle needed above (°),30,Half-apex angles above this get a knuckle,12
+weldRatePerM,Blank seam welding (per m at 10 mm),1200,Scaled by thickness and material,13
+qtyTiers,Quantity discount on conversion (qty:%),1:0|3:2|5:4|10:7|25:10,Applies to all lines except material,14
+maxQty,Maximum heads per quote,200,,15
+odcDiaMm,Over-dimension cargo above OD (mm),3200,Wider loads need a permit and escort,16
+odcCharge,Over-dimension permit and escort,25000,Per order,17
+odcFreightPct,Over-dimension freight surcharge (%),40,,18

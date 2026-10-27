@@ -1,0 +1,5 @@
+ID,name,description,families,ratePerKg,minCharge,leadDays,sort
+none,None,As formed,,0,0,0,1
+sr,Stress relieving (PWHT),About 620 °C. Relieves forming stresses.,CS,18,12000,3,2
+normalize,Normalizing,About 900 °C. Restores the grain structure after heavy forming.,CS,22,15000,3,3
+solution,Solution annealing,About 1050 °C with water quench. Restores corrosion resistance.,SS|DUPLEX,38,20000,4,4

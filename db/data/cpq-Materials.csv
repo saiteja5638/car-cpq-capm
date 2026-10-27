@@ -1,0 +1,7 @@
+ID,name,family,description,density,ratePerKg,formingFactor,minThk,maxThk,maxPlateWidth,codeApproved,leadDays,active
+is2062,IS 2062 E250 BR,CS,Structural carbon steel. Non-pressure use only.,7850,68,1,3,40,2500,false,2,true
+sa516,SA-516 Gr. 70,CS,Pressure vessel carbon steel plate.,7850,92,1,6,50,3000,true,5,true
+ss304l,SA-240 304L,SS,Austenitic stainless steel. General process and storage.,7930,285,1.3,3,40,2000,true,7,true
+ss316l,SA-240 316L,SS,Molybdenum stainless. Chemicals and pharma/food.,7980,395,1.35,3,40,2000,true,7,true
+duplex,SA-240 Duplex 2205,DUPLEX,High strength and chloride resistance.,7800,620,1.8,4,30,2000,true,21,true
+al5083,Aluminium 5083 H111,AL,Light weight. Cryogenic and marine service.,2660,420,0.9,4,30,2000,true,14,true

@@ -1,0 +1,10 @@
+node_modules
+frontend/dist
+*.sqlite
+# build output
+gen/
+srv/public/
+mta_archives/
+.mta/
+# deploy secrets (copy secrets.mtaext.example)
+*.mtaext

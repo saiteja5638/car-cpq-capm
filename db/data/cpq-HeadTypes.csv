@@ -1,0 +1,8 @@
+ID,name,code,kind,description,crownRatio,knuckleRatio,ellipseRatio,coneAngles,minDia,maxDia,thinningPct,formingRate,minCharge,setupCharge,leadDays,sort,active
+se21,Ellipsoidal 2:1,2:1 SE,ELLIPSE,Most common pressure vessel head. Depth is a quarter of the diameter.,,,2,,300,5000,12,55,4500,15000,10,1,true
+fd,Torispherical ASME F&D,ASME F&D,TORI,Flanged and dished. Crown radius = D and knuckle = 6% of D. Economical for low and medium pressure.,1,0.06,,,300,6000,10,42,3500,10000,8,2,true
+klopper,Torispherical Klöpper,DIN 28011,TORI,Crown radius = D and knuckle = 10% of D. European standard for tanks and vessels.,1,0.1,,,300,6000,10,45,3500,10000,8,3,true
+korbbogen,Torispherical Korbbogen,DIN 28013,TORI,Crown radius = 0.8 D and knuckle = 15.4% of D. Deeper and stronger than Klöpper.,0.8,0.154,,,300,5000,11,50,4000,12000,9,4,true
+hemi,Hemispherical,HEMI,HEMI,Half sphere. Highest pressure rating and the deepest draw.,,,,,400,5000,15,85,6500,25000,15,5,true
+cone,Conical,CONE,CONE,Cone for hopper and silo bottoms. Angles above 30° get a knuckle.,,0.1,,15|22.5|30|45|60,300,4000,5,48,4000,12000,9,6,true
+flat,Flat flanged,FLAT,FLAT,Flat disc with a formed knuckle and straight flange. For atmospheric tanks.,,0.06,,,300,6000,3,30,2500,6000,5,7,true

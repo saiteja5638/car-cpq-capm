@@ -1,0 +1,5 @@
+ID,extra_ID,ruleType,target_ID,amount,reason
+x01,mtc32,REQUIRES,tpi,0,A 3.2 certificate needs a third-party inspector
+x02,export,EXCLUDES,saddle,0,Export packing already includes saddles
+x03,ut,DISCOUNT,dpt,2500,NDT pack: UT with DPT
+x04,tpi,DISCOUNT,dimrep,3000,Inspection pack: TPI with dimensional report

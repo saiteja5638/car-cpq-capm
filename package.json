@@ -1,0 +1,74 @@
+{
+  "name": "car-cpq-cap",
+  "version": "3.0.0",
+  "description": "Dished heads CPQ (configure, price, quote) - SAP CAP (Node.js) + SQLite + React",
+  "dependencies": {
+    "@cap-js/hana": "^2.8.3",
+    "@cap-js/sqlite": "^2",
+    "@sap/cds": "^9",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^9"
+  },
+  "scripts": {
+    "setup": "npm install && npm --prefix frontend install",
+    "start": "cds-serve",
+    "watch": "cds watch",
+    "frontend": "npm --prefix frontend run dev",
+    "build:ui": "npm --prefix frontend run build",
+    "build": "npm run build:ui && cds build --production",
+    "mta": "mbt build",
+    "test": "node --test"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "[development]": {
+          "kind": "mocked",
+          "users": {
+            "admin": {
+              "password": "admin",
+              "roles": [
+                "ADMIN"
+              ]
+            },
+            "user": {
+              "password": "user",
+              "roles": [
+                "USER"
+              ]
+            }
+          }
+        },
+        "[production]": {
+          "kind": "basic",
+          "users": {
+            "*": false,
+            "admin": {
+              "roles": [
+                "ADMIN"
+              ]
+            },
+            "user": {
+              "roles": [
+                "USER"
+              ]
+            }
+          }
+        }
+      },
+      "db": {
+        "[production]": {
+          "kind": "hana"
+        }
+      }
+    },
+    "sql": {
+      "native_hana_associations": false
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,51 @@
+_schema-version: 3.3.0
+ID: car-cpq-cap
+version: 3.0.0
+description: "HeadQuote CPQ - dished heads configure, price, quote (SAP CAP + HANA Cloud + React)"
+parameters:
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm ci
+        - npm ci --prefix frontend
+        - npm run build --prefix frontend   # React app -> srv/public
+        - npx cds build --production        # -> gen/srv (app + UI) and gen/db (HANA artefacts + seed data)
+modules:
+  # CAP service + React UI, served by srv/server.js at "/"
+  - name: car-cpq-cap-srv
+    type: nodejs
+    path: gen/srv
+    parameters:
+      buildpack: nodejs_buildpack
+      instances: 1
+      memory: 256M
+      disk-quota: 1024M
+      health-check-type: http
+      health-check-http-endpoint: /health
+    build-parameters:
+      builder: npm-ci
+    provides:
+      - name: srv-api # required by consumers of CAP services (e.g. approuter)
+        properties:
+          srv-url: ${default-url}
+    requires:
+      - name: car-cpq-cap-db
+
+  # Deploys tables, views and seed data into the HDI container, then stops
+  - name: car-cpq-cap-db-deployer
+    type: hdb
+    path: gen/db
+    parameters:
+      buildpack: nodejs_buildpack
+      memory: 256M
+    requires:
+      - name: car-cpq-cap-db
+
+resources:
+  - name: car-cpq-cap-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared

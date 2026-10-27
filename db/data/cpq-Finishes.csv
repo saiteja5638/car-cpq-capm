@@ -1,0 +1,8 @@
+ID,name,description,families,ratePerM2,sides,needsColour,look,leadDays,sort,active
+mill,Mill finish (as formed),No surface treatment,,0,1,false,MILL,0,1,true
+blast,Shot blasting Sa 2.5,Both sides blasted to near-white metal,CS,220,2,false,BLAST,1,2,true
+primer,Blasting + red oxide primer,Both sides blasted and primed for storage,CS,380,2,false,PRIMER,2,3,true
+epoxy,Blasting + epoxy paint (2 coats),Outside painted in your RAL colour and inside primed,CS,780,2,true,PAINT,3,4,true
+pickle,Pickling and passivation,Removes heat tint and restores the passive layer,SS|DUPLEX,260,2,false,PICKLED,2,5,true
+polish180,Inside polish 180 grit (Ra ≤ 0.8 µm),Food and beverage grade,SS|DUPLEX,950,1,false,POLISH,4,6,true
+polish320,Inside polish 320 grit (Ra ≤ 0.4 µm),Pharma and hygienic grade,SS|DUPLEX,1650,1,false,POLISH,5,7,true

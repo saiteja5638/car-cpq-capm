@@ -1,0 +1,5 @@
+ID,name,requiresCodeMaterial,rtOnWelds,docCharge,sort
+noncode,Non-code (atmospheric / structural),false,false,0,1
+asme,ASME Sec. VIII Div. 1,true,true,15000,2
+en,EN 13445 / AD 2000,true,true,15000,3
+is2825,IS 2825,true,true,8000,4

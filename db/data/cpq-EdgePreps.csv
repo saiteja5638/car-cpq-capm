@@ -1,0 +1,5 @@
+ID,name,angle,ratePerM,minThk,sort
+square,Square cut (plain edge),0,0,0,1
+bevel30,Single V bevel 30°,30,450,6,2
+bevel375,Single V bevel 37.5° with 2 mm root face,37.5,520,6,3
+doublev,Double V (X) bevel 30°,30,850,16,4

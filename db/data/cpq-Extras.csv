@@ -1,0 +1,13 @@
+ID,groupName,name,description,basis,rate,families,weldedOnly,active,sort
+ut,Testing,Ultrasonic test of plate (UT),Lamination check of the blank,PER_M2,350,,false,true,1
+dpt,Testing,Dye penetrant test of knuckle (DPT),Surface crack check after forming,PER_M,600,,false,true,2
+rt,Testing,Radiography of blank weld seams (RT),Needed when the blank is welded from plates,PER_WELD,1800,,true,true,3
+pmi,Testing,Positive material identification (PMI),Alloy check of every head,PER_HEAD,1500,SS|DUPLEX,false,true,4
+ferrite,Testing,Ferrite content check,Confirms the duplex phase balance,PER_HEAD,1200,DUPLEX,false,true,5
+mtc32,Documents,Material certificate EN 10204 3.2,Countersigned by an independent inspector,PER_ORDER,18000,,false,true,6
+tpi,Documents,Third-party inspection (BV / TÜV / LRS),Inspector witnesses the final dimensional check,PER_ORDER,35000,,false,true,7
+dimrep,Documents,Detailed dimensional report,Profile template and thickness map of every head,PER_HEAD,1000,,false,true,8
+opening,Fabrication,Centre opening cut (nozzle / manhole),Plasma or machine cut to your drawing,PER_HEAD,3500,,false,true,9
+lugs,Fabrication,Lifting lugs (pair),Welded and load tested,PER_HEAD,4500,,false,true,10
+saddle,Packing,Wooden saddle packing,Protects the rim during road transport,PER_HEAD,3000,,false,true,11
+export,Packing,Seaworthy export packing,Crated with VCI wrap. Includes saddles.,PER_KG,14,,false,true,12
